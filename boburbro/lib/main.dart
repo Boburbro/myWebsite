@@ -1,5 +1,8 @@
+
 import 'package:flutter/material.dart';
 import 'package:particles_flutter/particles_flutter.dart';
+
+import 'dart:html' as html;
 
 void main(List<String> args) {
   runApp(MyApp());
@@ -16,6 +19,11 @@ class MyApp extends StatelessWidget {
 }
 
 class MyCustomWidget extends StatelessWidget {
+  List<Map<String, String>> sities = [
+    {"title": "Modul 1", "subtitle": "Quiz app", "url": ""},
+    {"title": "Modul 2", "subtitle": "USER List app","url": ""},
+  ];
+
   @override
   Widget build(BuildContext context) {
     double h = MediaQuery.of(context).size.height;
@@ -44,7 +52,22 @@ class MyCustomWidget extends StatelessWidget {
         SafeArea(
             child: Column(
           children: [
-            Text("data"),
+            Expanded(
+              child: ListView.builder(
+                  itemCount: sities.length,
+                  itemBuilder: (ctx, index) {
+                    return ListTile(
+                      leading: Icon(Icons.flutter_dash),
+                      title: Text("${sities[index]['title']}"),
+                      subtitle: Text("${sities[index]['subtitle']}"),
+                      trailing: IconButton(onPressed: (){
+                        // json.context.callMethod('open', ['httsp://github.com']);
+                        // js.context.callMethod('open', ['https://stackoverflow.com/questions/ask']);
+                        html.window.open("httsp://github.com", "_blank");
+                      }, icon: Icon(Icons.paste_sharp),),
+                    );
+                  }),
+            )
           ],
         ))
       ]),
