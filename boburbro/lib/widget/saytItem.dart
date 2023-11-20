@@ -20,12 +20,12 @@ class saytItem extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-            Center(
+        Center(
+          child: Card(
+            child: Expanded(
               child: Column(
-            
                 children: [
                   Container(
-                    
                     width: 500 * n,
                     height: 30,
                     decoration: const BoxDecoration(
@@ -71,7 +71,8 @@ class saytItem extends StatelessWidget {
                 ],
               ),
             ),
-         
+          ),
+        ),
         TextButton.icon(
           onPressed: () {
             html.window.open("https://t.me/ITwithBobur", "_self");
