@@ -1,5 +1,7 @@
 // ignore_for_file: must_be_immutable
 
+import 'dart:io';
+
 import 'package:adminapp/screens/main_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -14,13 +16,13 @@ class Home extends StatelessWidget {
 
   void submit(BuildContext context) {
     if (_controller.text.isEmpty) {
-      ScaffoldMessenger.of(context)
-            .showSnackBar(const SnackBar(content: Text("Siz hali parol kiritmadingiz")));
+      ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text("Siz hali parol kiritmadingiz")));
       return;
     } else {
       if (_controller.text == "1234") {
         Navigator.of(context)
-            .push(CupertinoPageRoute(builder: (ctx) => const MainPage()));
+            .push(CupertinoPageRoute(builder: (ctx) => MainPage()));
       } else {
         ScaffoldMessenger.of(context)
             .showSnackBar(const SnackBar(content: Text("Parol xato!")));
@@ -57,7 +59,9 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      exit(0);
+                    },
                     child: const Text(
                       "ILOVADAN CHIQISH",
                       style: TextStyle(color: Colors.red),
