@@ -1,39 +1,27 @@
-import 'package:boburbro/models/model.dart';
-import 'package:boburbro/widget/background.dart';
-import 'package:boburbro/widget/saytItem.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../screens/home.dart';
+
 void main(List<String> args) {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: GoogleFonts.aBeeZee().fontFamily),
-      debugShowCheckedModeBanner: false,
-      home: MyCustomWidget(),
-    );
-  }
-}
-
-class MyCustomWidget extends StatelessWidget {
-  final saytlar = Saytlar().list;
-
-  @override
-  Widget build(BuildContext context) {
-
-    return Scaffold(
-      backgroundColor: Colors.red,
-      body: Stack(
-        children: [
-          const Background(),
-          saytItem(saytlar: saytlar),
-        
-        ],
+      theme: ThemeData(
+        useMaterial3: false,
+        fontFamily: GoogleFonts.aBeeZee().fontFamily,
       ),
+      debugShowCheckedModeBanner: false,
+      initialRoute: "/",
+      routes: {
+        Home.routeName: (context) =>  Home(),
+      },
     );
   }
 }
