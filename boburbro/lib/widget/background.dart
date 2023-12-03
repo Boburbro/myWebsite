@@ -8,22 +8,22 @@ class Background extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CircularParticle(
-            width: MediaQuery.of(context).size.width,
-            height: MediaQuery.of(context).size.height,
-            awayRadius: MediaQuery.of(context).size.width / 5,
-            numberOfParticles: 150,
-            speedOfParticles: 1.5,
-            maxParticleSize: 7,
-            particleColor: Colors.white.withOpacity(.7),
-            awayAnimationDuration: const Duration(milliseconds: 600),
-            awayAnimationCurve: Curves.easeInOutBack,
-            onTapAnimation: true,
-            isRandSize: true,
-            isRandomColor: false,
-            connectDots: true,
-            enableHover: true,
-            hoverColor: Colors.black,
-            hoverRadius: 90,
-          );
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height,
+      awayRadius: MediaQuery.of(context).size.width / 5,
+      numberOfParticles: 300,
+      speedOfParticles: 3,
+      maxParticleSize: 15,
+      particleColor: Colors.white.withOpacity(.7),
+      awayAnimationDuration: const Duration(milliseconds: 600),
+      awayAnimationCurve: Curves.easeInOutBack,
+      onTapAnimation: true,
+      isRandSize: true,
+      isRandomColor: false,
+      connectDots: true,
+      enableHover: true,
+      hoverColor: Colors.black,
+      hoverRadius: 90,
+    );
   }
 }

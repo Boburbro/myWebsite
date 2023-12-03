@@ -29,7 +29,7 @@ class _MyProjectScreenState extends State<MyProjectScreen> {
     });
     Response response = await get(Urls().getUrl);
     setState(() {
-      data = jsonDecode(response.body);
+      data = jsonDecode(response.body)['data'];
     });
   }
 
