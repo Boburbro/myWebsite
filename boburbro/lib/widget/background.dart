@@ -12,7 +12,7 @@ class Background extends StatelessWidget {
       height: MediaQuery.of(context).size.height,
       awayRadius: MediaQuery.of(context).size.width / 5,
       numberOfParticles: 300,
-      speedOfParticles: 3,
+      speedOfParticles: 2,
       maxParticleSize: 15,
       particleColor: Colors.white.withOpacity(.7),
       awayAnimationDuration: const Duration(milliseconds: 600),
