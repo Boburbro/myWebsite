@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"/>
+      
+
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DJ3DFHZXDB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DJ3DFHZXDB');
+</script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Abdulaziz Sherzodjanov</title>
+  </head>
+  
+<body class="light" id="top">
+  <div id="progressbar"></div>
+  <div id="scrollPath"></div>    
+    <header class="header center">
+      
+      <h3>
+        <a href="/" class="link">Abdulaziz's Portfolio</a>
+
+      </h3>
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+
+      <div class="about center">
+        
+        <h1>Hi, I am <span class="about__name">Abdulaziz Sherzodjanov</span></h1>
+        <h2 class="about__role">A Back end Developer.</h2>
+        <p class="about__desc">
+          "Wake up to reality"
+          A programmer who never stops learning
+          
+        </p>
+
+        <div class="about__contact center">
+          <a href="https://drive.google.com/file/d/1oht6j93xxTR_S3FU8U2yXBxlwWJKfRau/view" target="_blank">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/AbdulazizSherzodjanov" 
+            aria-label="github"
+            class="link link--icon"
+            target="_blank"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://t.me/PyCoder_off1cial"
+            aria-label="telegram"
+            class="link link--icon"
+            target="_blank"
+          >
+          <i aria-hidden="true" class="fab fa-telegram"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>MyBlog Project</h3>
+            <p class="project__description">
+              I write down the knowledge I have learned or am learning on this blog site.
+              I used these technologies - Django Html, CSS, Bootstrap - to make this site. More than 20 people visit my site.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Django</li>
+              <li class="project__stack-item">HTML</li>
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">Bootstrap</li>
+            </ul>
+
+            <a
+              href="https://github.com/AbdulazizSherzodjanov/BlogDev_myblog"
+              aria-label="source code"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://blogdeveloper.pythonanywhere.com/"
+              aria-label="live preview"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>7 Pir Bot</h3>
+            <p class="project__description">
+              I made this bot in the final round of the mohirfest22 marathon.
+              I developed this bot in 3 languages for tourists visiting the 7pir shrine in Bukhara.
+              The main purpose of this bot is for tourists to easily find out the hotel, restaurant, and emergency numbers in Bukhara.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Aiogram</li>
+            </ul>
+
+            <a
+              href="https://github.com/AbdulazizSherzodjanov/7Pirbot"
+              aria-label="source code"
+              class="link link--icon"
+              target="_blank"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            
+              
+            </a>
+          </div>
+          <div class="project">
+              <h3>QuestZone</h3>
+              <p class="project__description">
+                I made this site so that users can register and ask questions or something like that.
+                I am currently still working on the development of this site. 
+                The number of users of the site is increasing.
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">Django</li>
+                <li class="project__stack-item">HTML</li>
+                <li class="project__stack-item">CSS</li>
+                <li class="project__stack-item">Bootstrap</li>
+              </ul>
+  
+              <a
+                href="https://github.com/AbdulazizSherzodjanov/DjangoQuestZone-v1-full-completed"
+                aria-label="source code"
+                class="link link--icon"
+                target="_blank"
+              >
+                <i aria-hidden="true" class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://djangoquestzone.pythonanywhere.com/"
+                aria-label="live preview"
+                class="link link--icon"
+                target="_blank"
+              >
+                <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <div class="project">
+              <h3>S1pmle Userbot</h3>
+              <p class="project__description">
+                A userbot for Telegram that contains various animations, funny things and useful things.
+                <!-- Video on how to use is in the youtube link below -->
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">Python</li>
+                <li class="project__stack-item">Telethon</li>
+              </ul>
+  
+              <a
+                href="https://github.com/AbdulazizSherzodjanov/S1impleUserbot"
+                aria-label="source code"
+                class="link link--icon"
+                target="_blank"
+              >
+                <i aria-hidden="true" class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://blogdeveloper.pythonanywhere.com/"
+                aria-label="live preview"
+                class="link link--icon"
+                target="_blank"
+              >
+                <!-- <i aria-hidden="true" class="fab fa-youtube"></i> -->
+              </a>
+          
+            </div>
+            <div class="project">
+              <h3>Blog Programming</h3>
+              <p class="project__description">
+                In this blog site, I post about the programming world.
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">Django</li>
+                <li class="project__stack-item">HTML</li>
+                <li class="project__stack-item">CSS</li>
+                <li class="project__stack-item">Bootstrap</li>
+              </ul>
+  
+              <a
+                href="https://github.com/AbdulazizSherzodjanov/Blog_Django_My_Big_Project"
+                aria-label="source code"
+                class="link link--icon"
+                target="_blank"
+              >
+                <i aria-hidden="true" class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://blogprogramming.pythonanywhere.com/"
+                aria-label="live preview"
+                class="link link--icon"
+                target="_blank"
+              >
+                <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <div class="project">
+              <h3>Prayer times</h3>
+              <p class="project__description">
+                Prayer times - This shows the prayer times of the city of Tashkent. In this project I used api.
+              </p>
+              <ul class="project__stack">
+                <li class="project__stack-item">Django</li>
+                <li class="project__stack-item">HTML</li>
+                <li class="project__stack-item">CSS</li>
+                <li class="project__stack-item">Api</li>
+              </ul>
+  
+              <a
+                href="https://github.com/AbdulazizSherzodjanov/Prayertimes_Django"
+                aria-label="source code"
+                class="link link--icon"
+                target="_blank"
+              >
+                <i aria-hidden="true" class="fab fa-github"></i>
+              </a>
+             
+              </a>
+            </div>      
+      </section>
+      
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          </i></li><li class="skills__list-item btn btn--plain"><i class="fab fa-python"></i> Python</li>
+          <li class="skills__list-item btn btn--plain"><i class="fab fa-php"></i> PHP</li>
+          <li class="skills__list-item btn btn--plain"><i class="fab fa-html5"></i> HTML</li>
+          <li class="skills__list-item btn btn--plain"><i class="fab fa-css3-alt"></i> CSS</li>
+          <li class="skills__list-item btn btn--plain"><i class="fab fa-bootstrap"></i> Bootstrap</li>
+          <li class="skills__list-item btn btn--plain"><i class="fas fa-database"></i> SQlite</li>
+          <li class="skills__list-item btn btn--plain"><i class="fas fa-feather"></i> Tkinter</li>
+          <li class="skills__list-item btn btn--plain"><i class="fab fa-git-alt"></i> Git</li>
+          <li class="skills__list-item btn btn--plain">Django</li>
+          <li class="skills__list-item btn btn--plain"><i class="fas fa-robot"></i> Aiogram</li>
+          <li class="skills__list-item btn btn--plain"><i class="fas fa-robot"></i> PyTelegramBotApi</li>
+          
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:abdulazizsherzodjanov@gmail.com">
+          <span class="btn btn--outline"><i class="fas fa-envelope"></i> Email me</span>
+          <br>
+          <a
+          href="https://t.me/abdulaziz_py"
+          aria-label="telegram"
+          class="link link--icon"
+          target="_blank"
+        >
+        <h2 class="section__title">Join my channel <i aria-hidden="true" class="fab fa-telegram"></i></h2>
+        
+        </a> 
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href=""
+        class="link footer__link"
+      >
+        
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  
+  </body>
+</html>
