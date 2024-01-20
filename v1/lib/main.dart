@@ -31,7 +31,8 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           fontFamily: GoogleFonts.inconsolata().fontFamily,
         ),
-        home: const Admin(),
+        home: const Home(),
+        // home: const Admin(),
         routes: {
           // Home.routeName: (context) => const Home(),
           ProjectScreen.routeName: (context) => const ProjectScreen(),
