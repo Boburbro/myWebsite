@@ -1,12 +1,20 @@
 import 'package:flutter/material.dart';
 
 class MobileScreen extends StatelessWidget {
-  const MobileScreen({super.key});
+  const MobileScreen({required this.child, super.key});
+
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
-    return const SizedBox(
-      width: 500,
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        SizedBox(
+          width: 500,
+          child: child,
+        )
+      ],
     );
   }
 }

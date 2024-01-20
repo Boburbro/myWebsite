@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
 from db import SQLhelper
+import json
 
 app = Flask(__name__)
 
@@ -9,7 +10,6 @@ def index():
     return {
         "STATUS": "ERROR No:1"
     }
-
 
 @app.route("/v1/api/get-user", methods=['GET'])
 def get_user():
@@ -61,6 +61,10 @@ def update_user():
 def get_project():
     db = SQLhelper('baza.db')
     user = db.get_projects()
+    a = '[{"aaa":"bajs"}]'
+    # a = user[0][4]
+    b = json.loads(a)
+    print(type(b))
     return user
 
 

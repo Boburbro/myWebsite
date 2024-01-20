@@ -26,14 +26,14 @@ class SQLhelper:
             row = self.cursor.fetchall()
             return row
 
-    def update_project(self, pId, title, subtitle, skills, links: list):
+    def update_project(self, pId, title, subtitle, skills, links):
         with self.connection:
-            self.connection.execute("""UPDATE project SET title = ?, subtitle = ?, skills = ?, links = ? WHERE rowid = ?""", [title, subtitle, skills, f"{links}", pId])
+            self.connection.execute("""UPDATE project SET title = ?, subtitle = ?, skills = ?, links = ? WHERE rowid = ?""", [title, subtitle, skills, links, pId])
        
-    def add_project(self, title, subtitle, skills, links: list):
+    def add_project(self, title, subtitle, skills, links):
         with self.connection:
             self.connection.execute("""INSERT INTO project (title, subtitle, skills, links) VALUES
-            (?,?,?,?)""", [title, subtitle, skills, f"{links}"])
+            (?,?,?,?)""", [title, subtitle, skills, links])
 
     
     def get_skills(self):
