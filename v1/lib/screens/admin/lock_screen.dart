@@ -15,7 +15,7 @@ class AdminLockScreen extends StatelessWidget {
       Navigator.of(context).pushReplacementNamed("/");
       return;
     }
-    if (username.text == "Boburbro" || password.text == "Baka0511") {
+    if (username.text == "Boburbro" || password.text == "f1") {
       Navigator.of(context)
           .pushReplacement(MaterialPageRoute(builder: (_) => const Admin()));
       return;
